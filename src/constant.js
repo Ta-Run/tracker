@@ -1,1 +1,1 @@
-export const DB_NAME = "registration"
+export const DB_NAME = "registrationtask"
