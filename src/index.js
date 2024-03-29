@@ -1,5 +1,5 @@
 import connectDB from "./dbconnection/index.js";
-import { app }from "./app.js";
+import { app } from "./app.js";
 import dotenv from "dotenv"
 
 const port = 8000
@@ -8,7 +8,7 @@ dotenv.config({
 })
 
 connectDB().then(() => {
-    app.listen( port, () => {
+    app.listen(port, () => {
         console.log(`server is running at port :${port}`)
     })
 }).catch((error) => {

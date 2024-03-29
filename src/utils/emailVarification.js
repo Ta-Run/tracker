@@ -12,7 +12,7 @@ const emailVarification = async (name, email, user_id) => {
         });
 
         let info = await transporter.sendMail({
-            from:'"tarun sharma",<tarun@gmial.com>',// list of receivers
+            from: '"tarun sharma",<tarun@gmial.com>',// list of receivers
             to: `${email}, baz@example.com`,
             subject: "Email Verification ", // Subject line
             text: "email is Verification ", // plain text body
@@ -27,4 +27,4 @@ const emailVarification = async (name, email, user_id) => {
     }
 }
 
-export  {emailVarification}
+export { emailVarification }
